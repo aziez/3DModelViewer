@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OBJLoader | Lokcay 3D</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="three/three.js"></script>
+    <script src="three/OrbitControls.js"></script>
+    <script src="three/FBXLoader.js"></script>
+    <script src="three/inflate.min.js"></script>
+
+</head>
+<body>
+     <div class="loading" id="js-loader">
+        <div class="loader"></div>
+    </div>
+    <span class="drag-notice" id="js-notif">Drag to rotate 360&#176;</span>
+
+    <div class="options">
+        <div class="option" data-option="bantal" >
+            <img src="jpg/bantal.png" alt="" />
+        </div>
+
+        <div class="option --is-active" data-option="body">
+            <img src="jpg/body.png" alt="" />
+        </div>
+
+        <div class="option" data-option="dudukan">
+            <img src="jpg/sofa.png" alt="" />
+        </div>
+    </div>
+
+        
+    <canvas id="c"></canvas>
+    <div class="controls">
+        <div class="info">
+            <div class="info__message">
+                <p><strong>&nbsp;Grab&nbsp;</strong> to rotate chair. <strong>&nbsp;Scroll&nbsp;</strong> to zoom. <strong>&nbsp;Drag&nbsp;</strong> swatches to view more.</p >
+            </div>
+        </div>
+
+        <div id="js-tray" class="tray">
+            <div id="js-tray-slide" class="tray__slide"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+
+  
+</body>
+</html>
